@@ -15,9 +15,9 @@
             // Operators
             const string undefined = "Indeterminado";
             Console.WriteLine("Ingresa el primer número: ");
-            double a = double.Parse(Console.ReadLine());
+            double? a = double.Parse(Console.ReadLine());
             Console.WriteLine("Ingresa el segundo número: ");
-            double b = double.Parse(Console.ReadLine());
+            double? b = double.Parse(Console.ReadLine());
             Console.WriteLine($"Suma: {a+b}\nResta:\n {a}-{b}: {a-b}\n {b}-{a}: {b-a}\nMultiplicación: {a*b}\nDivisión:\n {a}/{b}: {(b!=0 ? a/b : undefined)}\n {b}/{a}: {(a!=0 ? b/a : undefined)}");
         }
     }
